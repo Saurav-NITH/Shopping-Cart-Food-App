@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 1rem;
+  color: purple;
+}
+.food-product-list {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-product-list-item {
+  border: 3px solid purple;
+  list-style: none;
+  width: 30%;
+  margin: 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .food-product-list-item {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .food-product-list {
+    flex-direction: column;
+  }
+  .food-product-list-item {
+    width: 80%;
+  }
+}

@@ -1,0 +1,63 @@
+.food-product {
+  margin: 0;
+  overflow: hidden;
+}
+.food-image {
+  width: 220px;
+  height: 200px;
+  overflow: clip;
+}
+.food-name {
+  padding: 0.3rem;
+  font-size: 25px;
+  color: crimson;
+}
+.caption-content {
+  border-top: 3px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0.1rem;
+}
+.product_price {
+  /* display: inline-block; */
+  font-weight: 600;
+  color: red;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+.product_button-wrap {
+  color: blanchedalmond;
+}
+
+.btn-main {
+  background-color: rgb(13, 13, 224);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.btn-alt {
+  background-color: rgb(223, 35, 73);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .food-image {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .food-image {
+    width: 250px;
+  }
+}
